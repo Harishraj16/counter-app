@@ -1,3 +1,21 @@
+<h1 [ngStyle]="{'color':'red'}">property binding - (click)</h1>
+<hr>
 <h1>Count: {{count}}</h1>
 <button (click)="increment()">+</button> &nbsp;
 <button (click)="decrement()">-</button>
+<br><br>
+<hr>
+
+<h1 [ngStyle]="{'color':'red'}">two way binding - [(ngModel)]</h1>
+<hr>
+<h1>{{name}}</h1>
+<input type="text" [(ngModel)]="name">
+
+<br><br>
+<hr>
+
+<h1 [ngStyle]="{'color':'red'}">property binding - [innerText],[disabled]</h1>
+<hr>
+<h1 [innerText]="name"> - changed using innerText property binding</h1>
+<input type="checkbox" [(ngModel)]="isDisabled">
+<button [disabled]="isDisabled">click me!</button>
